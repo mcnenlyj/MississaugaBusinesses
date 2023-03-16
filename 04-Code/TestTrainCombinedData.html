@@ -14572,7 +14572,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span><span class="o">,</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -14736,7 +14736,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <span class="c1">#replace remainging 5 records with the most tagged value</span>
 <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'Location'</span><span class="p">]</span> <span class="o">=</span> <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'Location'</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="s1">'Northeast EA (East)'</span><span class="p">)</span>
 
-<span class="c1">#fill and factorize the following fields TollFree, BldgNo, UnitNo, WebAddress, Email</span>
+<span class="c1">#fill the following fields TollFree, BldgNo, UnitNo, WebAddress, Email, Fax, Phone with binary values</span>
 <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'TollFree'</span><span class="p">]</span> <span class="o">=</span> <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'TollFree'</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">r</span><span class="s1">'^\s*$'</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'TollFree'</span><span class="p">]</span> <span class="o">=</span> <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'TollFree'</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="s1">'No'</span><span class="p">)</span>
 <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'TollFree'</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'TollFree'</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">'No'</span><span class="p">,</span> <span class="s1">'Yes'</span><span class="p">,</span> <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'TollFree'</span><span class="p">])</span>
@@ -14745,6 +14745,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'EMail'</span><span class="p">]</span> <span class="o">=</span> <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'EMail'</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="s1">'Yes'</span><span class="p">)</span>
 <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'EMail'</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'EMail'</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">'Yes'</span><span class="p">,</span> <span class="s1">'No'</span><span class="p">,</span> <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'EMail'</span><span class="p">])</span>
 
+<span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'Fax'</span><span class="p">]</span> <span class="o">=</span> <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'Fax'</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">r</span><span class="s1">'^\s*$'</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'Fax'</span><span class="p">]</span> <span class="o">=</span> <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'Fax'</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="s1">'No'</span><span class="p">)</span>
+<span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'Fax'</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'Fax'</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">'No'</span><span class="p">,</span> <span class="s1">'Yes'</span><span class="p">,</span> <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'TollFree'</span><span class="p">])</span>
+
+<span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'Phone'</span><span class="p">]</span> <span class="o">=</span> <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'Phone'</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">r</span><span class="s1">'^\s*$'</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'Phone'</span><span class="p">]</span> <span class="o">=</span> <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'Phone'</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="s1">'No'</span><span class="p">)</span>
+<span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'Phone'</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'Phone'</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">'No'</span><span class="p">,</span> <span class="s1">'Yes'</span><span class="p">,</span> <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'TollFree'</span><span class="p">])</span>
 
 <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'BldgNo'</span><span class="p">]</span> <span class="o">=</span> <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'BldgNo'</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">r</span><span class="s1">'^\s*$'</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'BldgNo'</span><span class="p">]</span> <span class="o">=</span> <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'BldgNo'</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="s1">'No'</span><span class="p">)</span>
@@ -14766,8 +14773,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <span class="n">merged_complete_df</span><span class="o">.</span><span class="n">NAICSCode</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
 <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'NAICSCode'</span><span class="p">]</span> <span class="o">=</span> <span class="n">merged_complete_df</span><span class="o">.</span><span class="n">NAICSCode</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">.</span><span class="n">str</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
 <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'NAICSCode'</span><span class="p">]</span> <span class="o">=</span> <span class="n">merged_complete_df</span><span class="p">[</span><span class="s1">'NAICSCode'</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
-
-
 
 <span class="c1">#convert EmplRange to ordinal</span>
 <span class="n">empl_range_mapper</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'1 to 4'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">'5 to 9'</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'10 to 19'</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span><span class="s1">'20 to 49'</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">'50 to 99'</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">'100 to 299'</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> <span class="s1">'300 to 499'</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span> <span class="s1">'500 to 999'</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span> <span class="s1">'1000+'</span><span class="p">:</span> <span class="mi">9</span> <span class="p">}</span>
@@ -14837,7 +14842,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="n">merged_complete_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -14858,13 +14863,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-  <div id="df-672f31cb-b736-4672-b771-dc8c031d9ae4">
+  <div id="df-64c74581-2b5a-4136-aa67-88e19ce266e1">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -14934,8 +14939,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>41</td>
       <td>Wholesale Trade</td>
       <td>Amusement and Sporting Goods Wholesaler-Distri...</td>
-      <td>905-795-8900</td>
-      <td>905-795-8988</td>
+      <td>Yes</td>
+      <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -14965,8 +14970,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>32</td>
       <td>Manufacturing</td>
       <td>Support Activities for Printing</td>
-      <td>905-795-9575</td>
-      <td>905-795-8775</td>
+      <td>Yes</td>
+      <td>Yes</td>
       <td>No</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -14996,8 +15001,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>32</td>
       <td>Manufacturing</td>
       <td>Support Activities for Printing</td>
-      <td>905-795-9519</td>
-      <td>905-795-8775</td>
+      <td>Yes</td>
+      <td>Yes</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -15027,8 +15032,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>32</td>
       <td>Manufacturing</td>
       <td>Other Printing</td>
-      <td>905-564-8121</td>
-      <td>905-564-7395</td>
+      <td>Yes</td>
+      <td>Yes</td>
       <td>No</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -15058,8 +15063,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>41</td>
       <td>Wholesale Trade</td>
       <td>Industrial Machinery, Equipment and Supplies W...</td>
-      <td>905-564-8080</td>
-      <td>905-564-5003</td>
+      <td>Yes</td>
+      <td>Yes</td>
       <td>No</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -15073,7 +15078,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-672f31cb-b736-4672-b771-dc8c031d9ae4')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-64c74581-2b5a-4136-aa67-88e19ce266e1')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -15124,12 +15129,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
       <script>
         const buttonEl =
-          document.querySelector('#df-672f31cb-b736-4672-b771-dc8c031d9ae4 button.colab-df-convert');
+          document.querySelector('#df-64c74581-2b5a-4136-aa67-88e19ce266e1 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-672f31cb-b736-4672-b771-dc8c031d9ae4');
+          const element = document.querySelector('#df-64c74581-2b5a-4136-aa67-88e19ce266e1');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -15179,7 +15184,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#use to check for null values and make decisions about columns to drop</span>
@@ -15205,7 +15210,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 
 
 
@@ -15253,7 +15258,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="n">merged_complete_df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -15326,7 +15331,7 @@ memory usage: 16.7+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="n">merged_complete_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -15347,13 +15352,13 @@ memory usage: 16.7+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-  <div id="df-c2198a93-cd07-445a-95a8-4315d36e20e6">
+  <div id="df-cb8d8b92-628f-45e2-af9a-047392f7f47b">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -15423,8 +15428,8 @@ memory usage: 16.7+ MB
       <td>41</td>
       <td>Wholesale Trade</td>
       <td>Amusement and Sporting Goods Wholesaler-Distri...</td>
-      <td>905-795-8900</td>
-      <td>905-795-8988</td>
+      <td>Yes</td>
+      <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -15454,8 +15459,8 @@ memory usage: 16.7+ MB
       <td>32</td>
       <td>Manufacturing</td>
       <td>Support Activities for Printing</td>
-      <td>905-795-9575</td>
-      <td>905-795-8775</td>
+      <td>Yes</td>
+      <td>Yes</td>
       <td>No</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -15485,8 +15490,8 @@ memory usage: 16.7+ MB
       <td>32</td>
       <td>Manufacturing</td>
       <td>Support Activities for Printing</td>
-      <td>905-795-9519</td>
-      <td>905-795-8775</td>
+      <td>Yes</td>
+      <td>Yes</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -15516,8 +15521,8 @@ memory usage: 16.7+ MB
       <td>32</td>
       <td>Manufacturing</td>
       <td>Other Printing</td>
-      <td>905-564-8121</td>
-      <td>905-564-7395</td>
+      <td>Yes</td>
+      <td>Yes</td>
       <td>No</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -15547,8 +15552,8 @@ memory usage: 16.7+ MB
       <td>41</td>
       <td>Wholesale Trade</td>
       <td>Industrial Machinery, Equipment and Supplies W...</td>
-      <td>905-564-8080</td>
-      <td>905-564-5003</td>
+      <td>Yes</td>
+      <td>Yes</td>
       <td>No</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -15562,7 +15567,7 @@ memory usage: 16.7+ MB
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-c2198a93-cd07-445a-95a8-4315d36e20e6')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-cb8d8b92-628f-45e2-af9a-047392f7f47b')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -15613,12 +15618,12 @@ memory usage: 16.7+ MB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-c2198a93-cd07-445a-95a8-4315d36e20e6 button.colab-df-convert');
+          document.querySelector('#df-cb8d8b92-628f-45e2-af9a-047392f7f47b button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-c2198a93-cd07-445a-95a8-4315d36e20e6');
+          const element = document.querySelector('#df-cb8d8b92-628f-45e2-af9a-047392f7f47b');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -15651,7 +15656,7 @@ memory usage: 16.7+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#histograms of numeric attributes</span>
@@ -15673,7 +15678,7 @@ memory usage: 16.7+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 
 
 
@@ -15722,7 +15727,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#boxplots of numeric attributes</span>
@@ -15744,7 +15749,7 @@ jp-needs-light-background
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 
 
 
@@ -15783,7 +15788,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#bar plots of categorical attributes by year - EmplRange</span>
@@ -15806,7 +15811,7 @@ jp-needs-light-background
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
 
 
 
@@ -15845,7 +15850,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#bar plots of categorical attributes by year - NAICSCat</span>
@@ -15868,7 +15873,7 @@ jp-needs-light-background
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 
 
 
@@ -15907,7 +15912,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#bar plots of categorical attributes by year - NAICSCode</span>
@@ -15930,7 +15935,7 @@ jp-needs-light-background
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 
 
 
@@ -15969,7 +15974,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#bar plots of categorical attributes by year - Closed</span>
@@ -15992,7 +15997,7 @@ jp-needs-light-background
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 
 
 
@@ -16031,7 +16036,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#bar plots of categorical attributes by year - isnew</span>
@@ -16054,7 +16059,7 @@ jp-needs-light-background
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 
 
 
@@ -16093,7 +16098,7 @@ jp-needs-light-background
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1">#bar plots of categorical attributes by year - Location</span>
@@ -16116,7 +16121,7 @@ jp-needs-light-background
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 
 
 
