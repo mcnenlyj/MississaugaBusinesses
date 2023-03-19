@@ -13,7 +13,7 @@ files.  All coding files are in Python.
 
 04-Code
 
-As of March 13, 2023 you will find my code in the <b>04-Code folder</b>.  I have also uploaded a revised data structure table in that folder and noted where I transformed attributes.  <b>TestTrainCombined</b> has the data cleanup exercises I performed. <b>2021CleanDataSet</b> has the results of the businesses and size of business that failed or survived. <b>Filterbasedpredictors, FeatureSelection and the SKlearnMissississaugaBusinessDirectory </b> has the results of feature selection and prediction.
+As of March 13, 2023 you will find my code in the <b>04-Code folder</b>.  I have also uploaded a revised data structure table in that folder and noted where I transformed attributes.  <b>TestTrainCombined</b> has the data cleanup exercises I performed. <b>2021CleanDataSet</b> has the results of the businesses and size of business that failed or survived and industry clustering vs size of businesses. <b>Filterbasedpredictors, FeatureSelection and the SKlearnMissississaugaBusinessDirectory </b> has the results of feature selection and prediction.
 
 
 The results of the businesses that were most / least affected by the pandemic somewhat matches the studies I looked at.  I have noted in the file 2021CleanDataset which businesses these were and can go into detail in the next stage of the project.  I think that is interesting. Some industries, like mining or forestry were not industries you would expect to find in a city, so that discrepency with some of the studies can be explained.  
