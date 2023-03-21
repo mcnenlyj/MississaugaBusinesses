@@ -3,7 +3,7 @@ This is my Github repository for the CIND 820 Capstone Project "The effect of Co
 Github repository and can be found at https://github.com/mcnenlyj/MississaugaBusinesses.  I have uploaded the relevant Microsoft Word, Excel, html and pdf 
 files.  All coding files are in Python.
 
-00-Original_Abstract 
+00-Original_Abstract - <a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/00-Original_Abstract/Big%20Data%20Analytics%20Capstone%20Project%20Abstract%20-%20Jennifer%20McNenly.docx">Original Abstract</a>
 
 01-Revised_Abstract_and_Literature_Review
 
