@@ -8,7 +8,16 @@ files.  All coding files are in Python.
 01-Revised_Abstract_and_Literature_Review - <a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/01-Revised_Abstract_and_Literature_Review/Literature%20Review%20(Final%20February%2021%2C%202023).docx">Revised Abstract and Literature Review</a>
 
 02-Raw_Data
-
+<ol>
+  <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/2016_Mississauga_Business_Directory.csv">2016_Mississauga_Business_Directory.csv</a></li>
+  <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/2017_Mississauga_Business_Directory.csv">2017_Mississauga_Business_Directory.csv</a></li>
+  <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/2018_Mississauga_Business_Directory.csv">018_Mississauga_Business_Directory.csv</a></li>
+  <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/2019_Mississauga_Business_Directory.csv"></a>2019_Mississauga_Business_Directory</li>
+  <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/2021_Mississauga_Business_Directory.csv">2021_Mississauga_Business_Directory</a>
+  <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/TestTrainCombinedData.ipynb">TestTrainCombinedData.ipynb</a>- Python file with cleanup and merging of data that uses the 5 annual files and merges to <a hre="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/merged_completedata.csv">merged_completedata.csv</a></li>
+      <li><a hre="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/merged_completedata.csv">merged_completedata.csv - csv file of merged data</a></li>
+  </ol
+    
 03-EDA_Reports
 
 04-Code
