@@ -5,7 +5,7 @@ files.  All coding files are in Python.
 
 00-Original_Abstract - <a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/00-Original_Abstract/Big%20Data%20Analytics%20Capstone%20Project%20Abstract%20-%20Jennifer%20McNenly.docx">Original Abstract</a>
 
-01-Revised_Abstract_and_Literature_Review
+01-Revised_Abstract_and_Literature_Review - <a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/01-Revised_Abstract_and_Literature_Review/Literature%20Review%20(Final%20February%2021%2C%202023).docx">Revised Abstract and Literature Review</a>
 
 02-Raw_Data
 
