@@ -8,6 +8,7 @@ files.  All coding files are in Python.
 01-Revised_Abstract_and_Literature_Review - <a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/01-Revised_Abstract_and_Literature_Review/Literature%20Review%20(Final%20February%2021%2C%202023).docx">Revised Abstract and Literature Review</a>
 
 02-Raw_Data
+
 The raw data is in 5 annual csv files taken from the <a href="https://data.mississauga.ca/">Open Data Catalogue for the City of Mississuaga<a/>
 <ol>
   <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/2016_Mississauga_Business_Directory.csv">2016_Mississauga_Business_Directory.csv</a></li>
@@ -20,6 +21,7 @@ The raw data is in 5 annual csv files taken from the <a href="https://data.missi
   </ol>
     
 03-EDA_Reports
+
 There are EDA reports in both python and html format for the each year before the data was merged.  
 For the merged data you will find my original EDA results in the file <a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/03-EDA_Reports/CombinedDataSetEDAMississaugaBusinessDirectory.html">CombinedDataSetEDAMississaugaBusinessDirectory.html</a> and my final results after extensive cleaning in the file <a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/03-EDA_Reports/EDACleanData.html">EDACleanData.html</a>. The Python code for running the EDA report is in the file <a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/03-EDA_Reports/CombinedEDA2016to2021MississaugaBusinessDirectory.ipynb">CombinedEDA2016to2021MississaugaBusinessDirectory.ipynb</a> 
 
