@@ -40,7 +40,7 @@ I put the results of the businesses that closed between 2019 and 2021 in the fol
   
  The feature selection can be found in the following files:
   <ul>
-    <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/FeatureSelection.ipynb">FeatureSelection.ipynb</a> - Python code</li>
+    <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/FeatureSelection.ipynb">FeatureSelection.ipynb"</a> - Python code</li>
     <li><a href="">https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/FeatureSelection.html">FeatureSelection.html</a> - html results</li>
     <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/FeatureSelection.pdf">FeatureSelection.pdf</a> - pdf results</li>
   </ul>
