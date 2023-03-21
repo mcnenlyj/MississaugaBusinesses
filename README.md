@@ -10,15 +10,19 @@ files.  All coding files are in Python.
 02-Raw_Data
 
 The raw data is in 5 annual csv files taken from the <a href="https://data.mississauga.ca/">Open Data Catalogue for the City of Mississuaga<a/>
-<ol>
+<ul>
   <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/2016_Mississauga_Business_Directory.csv">2016_Mississauga_Business_Directory.csv</a></li>
   <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/2017_Mississauga_Business_Directory.csv">2017_Mississauga_Business_Directory.csv</a></li>
   <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/2018_Mississauga_Business_Directory.csv">2018_Mississauga_Business_Directory.csv</a></li>
   <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/2019_Mississauga_Business_Directory.csv">2019_Mississauga_Business_Directory.csv</a></li>
   <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/2021_Mississauga_Business_Directory.csv">2021_Mississauga_Business_Directory.csv</a></li>
+  </ul>
+  
+  The merged and cleaned data is in two files
+  <ul>
   <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/TestTrainCombinedData.ipynb">TestTrainCombinedData.ipynb</a>- Python file with cleanup and merging of data that uses the 5 annual files and merges to <a hre="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/merged_completedata.csv">merged_completedata.csv</a></li>
       <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/merged_completedata.csv">merged_completedata.csv - csv file of merged data</a></li>
-  </ol>
+  </ul>
     
 03-EDA_Reports
 
@@ -27,6 +31,13 @@ For the merged data you will find my original EDA results in the file <a href="h
 
 04-Code
 
+I put the results of the businesses that closed between 2019 and 2021 in the following files:
+  <ul>
+    <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/2021CleanDataset.ipynb">2021CleanDataset.ipynb</a>Python code</li>
+    <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/2021CleanDataset.html">2021CleanDataset.html</a> - Results in html</li>
+    <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/2021CleanDataset.pdf">2021CleanDataset.pdf</a> - Reulsts in pdf</li>
+    </ul>
+  
 As of March 13, 2023 you will find my code in the <b>04-Code folder</b>.  I have also uploaded a revised data structure table in that folder and noted where I transformed attributes.  <b>TestTrainCombined</b> has the data cleanup exercises I performed. <b>2021CleanDataSet</b> has the results of the businesses and size of business that failed or survived and industry clustering vs size of businesses. <b>Filterbasedpredictors, FeatureSelection and the SKlearnMissississaugaBusinessDirectory </b> has the results of feature selection and prediction.
 
 
