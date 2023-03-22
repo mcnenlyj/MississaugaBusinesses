@@ -52,7 +52,7 @@ Filter based
     <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/Filterbasedpredictors.html">Filterbasedpredictors.html</a> - html results</li>
     <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/Filterbasedpredictors.pdf">Filterbasedpredictors.pdf</a> - pdf results</li>
   </ul>
-Bayes and GaussianNB  
+Decision Tree, Naive Bayes GaussianNB  
   <ul>
     <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/sklearnMississaugaBusinessDirectory.ipynb">sklearnMississaugaBusinessDirectory.ipynb</a> - Python file</li>
     <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/sklearnMississaugaBusinessDirectory.ipynb%20-%20Colaboratory.pdf">sklearnMississaugaBusinessDirectory.ipynb - Colaboratory.pdf</a> - pdf results
