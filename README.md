@@ -67,12 +67,11 @@ I put the results of the businesses that closed between 2019 and 2021 in the fol
   <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/SMOTEMethods.pdf">SMOTEMethods.pdf</a> - pdf results</li>
 
     
- <b>05-Project Report</b>
+<b>05-Project Report</b>
  
- <b>06-Project Presentation</b>
+<b>06-Project Presentation</b>
  
- <b><a href="https://github.com/mcnenlyj/MississaugaBusinesses/tree/main/Bibliography_Resources">Bibliographic Resources</a></b> - copy of one of the studies on the Yelp dataset that was only available behind a paywall.  I purchased the article and have provided a copy of it here.
- 
+<b><a href="https://github.com/mcnenlyj/MississaugaBusinesses/tree/main/Bibliography_Resources">Bibliographic Resources</a></b> - copy of one of the studies on the Yelp dataset that was only available behind a paywall.  I purchased the article and have provided a copy of it here.
  
  
 The results of the businesses that were most / least affected by the pandemic somewhat matches the studies I looked at.  I have noted in the file 2021CleanDataset which businesses these were and go into detail in the project report.  I think that is interesting. Some industries, like mining or forestry were not industries you would expect to find in a city, so that discrepency with some of the studies can be explained.  
