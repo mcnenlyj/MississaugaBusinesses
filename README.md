@@ -46,19 +46,22 @@ I put the results of the businesses that closed between 2019 and 2021 in the fol
   </ul>
   
   The predictions can be found in the following files:
-
+<br>
  <b>Filter based</b>
+  <br>
   <ul>
     <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/Filterbasedpredictors.ipynb">Filterbasedpredictors.ipynb</a> - Python code</li>
     <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/Filterbasedpredictors.html">Filterbasedpredictors.html</a> - html results</li>
     <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/Filterbasedpredictors.pdf">Filterbasedpredictors.pdf</a> - pdf results</li>
   </ul>
 <b>Decision Tree, Naive Bayes GaussianNB</b>
+  <br>
   <ul>
     <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/sklearnMississaugaBusinessDirectory.ipynb">sklearnMississaugaBusinessDirectory.ipynb</a> - Python file</li>
     <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/sklearnMississaugaBusinessDirectory.ipynb%20-%20Colaboratory.pdf">sklearnMississaugaBusinessDirectory.ipynb - Colaboratory.pdf</a> - pdf results
   </ul>
 <b>SMOTE techniques to deal with imbalanced dataset</b>
+  <br>
   <ul>
   <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/SMOTEMethods.ipynb">SMOTEMethods.ipynb</a> - Python file</li>
   <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/SMOTEMethods.html">SMOTEMethods.html</a> - html results</li>
