@@ -59,7 +59,6 @@ I put the results of the businesses that closed between 2019 and 2021 in the fol
 <b>Decision Tree, Naive Bayes GaussianNB</b>
   <ul>
     <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/sklearnMississaugaBusinessDirectory.ipynb">sklearnMississaugaBusinessDirectory.ipynb</a> - Python file</li>
-    <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/sklearnMississaugaBusinessDirectory.ipynb%20-%20Colaboratory.pdf">sklearnMississaugaBusinessDirectory.ipynb - Colaboratory.pdf</a> - pdf results
   </ul>
 <b>SMOTE techniques to deal with imbalanced dataset</b>
   <ul>
@@ -67,9 +66,10 @@ I put the results of the businesses that closed between 2019 and 2021 in the fol
   <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/SMOTEMethods.html">SMOTEMethods.html</a> - html results</li>
   <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/SMOTEMethods.pdf">SMOTEMethods.pdf</a> - pdf results</li>
 
- <b><a href="https://github.com/mcnenlyj/MississaugaBusinesses/tree/main/05-Project%20Report">05-Project Report</a></b>
+    
+ <b>05-Project Report</b>
  
- <b><a href="https://github.com/mcnenlyj/MississaugaBusinesses/tree/main/06-Project%20Presentation">06-Project Presentation</a></b>
+ <b>06-Project Presentation</b>
  
  <b><a href="https://github.com/mcnenlyj/MississaugaBusinesses/tree/main/Bibliography_Resources">Bibliographic Resources</a></b> - copy of one of the studies on the Yelp dataset that was only available behind a paywall.  I purchased the article and have provided a copy of it here.
  
