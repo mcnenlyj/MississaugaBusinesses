@@ -77,6 +77,6 @@ I put the results of the businesses that closed between 2019 and 2021 in the fol
  
 The results of the businesses that were most / least affected by the pandemic somewhat matches the studies I looked at.  I have noted in the file 2021CleanDataset which businesses these were and go into detail in the project report.  I think that is interesting. Some industries, like mining or forestry were not industries you would expect to find in a city, so that discrepency with some of the studies can be explained.  
 
-My feature analysis and prediction did not produce good results even after accounting for overfitting.  There were no consistent attributes within the dataset that predicted if a business would not survive.  The models were better at predicting is businesses survived but even then the results were in the low 80s for accuracy.
+My feature analysis and prediction did not produce good results even after accounting for overfitting in imbalanced datasets.  There were no consistent attributes within the dataset that predicted if a business closed.  The models were better at predicting if a business survived, but even then the results were in the low 80s for accuracy.  Please see my Project Report and Project Presentation for details.
 
 Jennifer McNenly
