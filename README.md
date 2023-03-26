@@ -27,13 +27,11 @@ For the merged data you will find my original EDA results in the file <a href="h
 
  The merged and cleaned data is in two files
   <ul>
-  <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/TestTrainCombinedData.ipynb">TestTrainCombinedData.ipynb</a> - Python file with cleanup and merging of data that uses the 5 annual files and merges to <a hre="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/merged_completedata.csv">merged_completedata.csv</a></li>
+  <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/TestTrainCombinedData.ipynb">TestTrainCombinedData.ipynb</a> - Python file with cleanup and merging of data that uses the 5 annual files and merges to <a hre="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/merged_completedata.csv">merged_completedata.csv</a>.  Details the data cleanup exercises I performed.</li>
       <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/merged_completedata.csv">merged_completedata.csv</a> - csv file of merged data</li>
   </ul>
   
   I landed on a final revised data structure after transformation which you will find in this file <a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/RevisedDataStructureAfterTransformation.docx">RevisedDataStructureAfterTransformation.docx</a>
-  
-    <b>TestTrainCombined</b> has the data cleanup exercises I performed. 
   
 I put the results of the businesses that closed between 2019 and 2021 in the following files:
   <ul>
