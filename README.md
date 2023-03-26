@@ -41,7 +41,7 @@ I put the results of the businesses that closed between 2019 and 2021 in the fol
  The feature selection can be found in the following files:
   <ul>
     <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/FeatureSelection.ipynb">FeatureSelection.ipynb"</a> - Python code</li>
-    <li><a href="">https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/FeatureSelection.html">FeatureSelection.html</a> - html results</li>
+    <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/FeatureSelection.html">FeatureSelection.html</a> - html results</li>
     <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/FeatureSelection.pdf">FeatureSelection.pdf</a> - pdf results</li>
   </ul>
   
@@ -59,9 +59,9 @@ Decision Tree, Naive Bayes GaussianNB
   </ul>
   SMOTE techniques to deal with imbalanced dataset
   <ul>
-  li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/SMOTEMethods.ipynb">SMOTEMethods.ipynb</a> - Python file</li>
-  <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/SMOTEMethods.html">SMOTEMethods.html</a> - html file</li>
-  <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/SMOTEMethods.pdf">SMOTEMethods.pdf</a> - pdf file</li>
+  <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/SMOTEMethods.ipynb">SMOTEMethods.ipynb</a> - Python file</li>
+  <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/SMOTEMethods.html">SMOTEMethods.html</a> - html results</li>
+  <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/SMOTEMethods.pdf">SMOTEMethods.pdf</a> - pdf results</li>
   
   
 As of March 13, 2023 you will find my code in the <b>04-Code folder</b>.  I have also uploaded a revised data structure table in that folder and noted where I transformed attributes.  <b>TestTrainCombined</b> has the data cleanup exercises I performed. <b>2021CleanDataSet</b> has the results of the businesses and size of business that failed or survived and industry clustering vs size of businesses. <b>Filterbasedpredictors, FeatureSelection and the SKlearnMissississaugaBusinessDirectory </b> has the results of feature selection and prediction.
