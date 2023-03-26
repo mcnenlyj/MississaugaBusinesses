@@ -45,7 +45,7 @@ I put the results of the businesses that closed between 2019 and 2021 in the fol
     <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/FeatureSelection.pdf">FeatureSelection.pdf</a> - pdf results</li>
   </ul>
   
-  <b>The predictions can be found in the following files:</b>
+  The predictions can be found in the following files:
   </br>
 <b>Filter based</b>
   <ul>
