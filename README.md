@@ -3,11 +3,11 @@ This is my Github repository for the CIND 820 Capstone Project "The effect of Co
 Github repository and can be found at https://github.com/mcnenlyj/MississaugaBusinesses.  I have uploaded the relevant Microsoft Word, Excel, html and pdf 
 files.  All coding files are in Python.
 
-00-Original_Abstract - <a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/00-Original_Abstract/Big%20Data%20Analytics%20Capstone%20Project%20Abstract%20-%20Jennifer%20McNenly.docx">Original Abstract</a>
+<b>00-Original_Abstract</b> - <a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/00-Original_Abstract/Big%20Data%20Analytics%20Capstone%20Project%20Abstract%20-%20Jennifer%20McNenly.docx">Original Abstract</a>
 
 01-Revised_Abstract_and_Literature_Review - <a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/01-Revised_Abstract_and_Literature_Review/Literature%20Review%20(Final%20February%2021%2C%202023).docx">Revised Abstract and Literature Review</a>
 
-02-Raw_Data
+<b>02-Raw_Data</b>
 
 The raw data is in 5 annual csv files taken from the <a href="https://data.mississauga.ca/">Open Data Catalogue for the City of Mississuaga<a/>
 <ul>
@@ -24,12 +24,12 @@ The raw data is in 5 annual csv files taken from the <a href="https://data.missi
       <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/merged_completedata.csv">merged_completedata.csv</a> - csv file of merged data</li>
   </ul>
     
-03-EDA_Reports
+  <b>03-EDA_Reports</b>
 
 There are EDA reports in both python and html format for the each year before the data was merged.  
 For the merged data you will find my original EDA results in the file <a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/03-EDA_Reports/CombinedDataSetEDAMississaugaBusinessDirectory.html">CombinedDataSetEDAMississaugaBusinessDirectory.html</a> and my final results after extensive cleaning in the file <a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/03-EDA_Reports/EDACleanData.html">EDACleanData.html</a>. The Python code for running the EDA report is in the file <a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/03-EDA_Reports/CombinedEDA2016to2021MississaugaBusinessDirectory.ipynb">CombinedEDA2016to2021MississaugaBusinessDirectory.ipynb</a> 
 
-04-Code
+  <b>04-Code</b>
 
 I put the results of the businesses that closed between 2019 and 2021 in the following files:
   <ul>
@@ -63,7 +63,8 @@ Decision Tree, Naive Bayes GaussianNB
   <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/SMOTEMethods.html">SMOTEMethods.html</a> - html results</li>
   <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/SMOTEMethods.pdf">SMOTEMethods.pdf</a> - pdf results</li>
   
-  
+ 
+    
 As of March 13, 2023 you will find my code in the <b>04-Code folder</b>.  I have also uploaded a revised data structure table in that folder and noted where I transformed attributes.  <b>TestTrainCombined</b> has the data cleanup exercises I performed. <b>2021CleanDataSet</b> has the results of the businesses and size of business that failed or survived and industry clustering vs size of businesses. <b>Filterbasedpredictors, FeatureSelection and the SKlearnMissississaugaBusinessDirectory </b> has the results of feature selection and prediction.
 
 
