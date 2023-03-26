@@ -18,20 +18,20 @@ The raw data is in 5 annual csv files taken from the <a href="https://data.missi
   <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/2021_Mississauga_Business_Directory.csv">2021_Mississauga_Business_Directory.csv</a></li>
   </ul>
   
-  <b>03-EDA_Reports</b>
+<b>03-EDA_Reports</b>
 
 There are EDA reports in both python and html format for the each year before the data was merged.  
 For the merged data you will find my original EDA results in the file <a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/03-EDA_Reports/CombinedDataSetEDAMississaugaBusinessDirectory.html">CombinedDataSetEDAMississaugaBusinessDirectory.html</a> and my final results after extensive cleaning in the file <a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/03-EDA_Reports/EDACleanData.html">EDACleanData.html</a>. The Python code for running the EDA report is in the file <a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/03-EDA_Reports/CombinedEDA2016to2021MississaugaBusinessDirectory.ipynb">CombinedEDA2016to2021MississaugaBusinessDirectory.ipynb</a> 
 
-  <b>04-Code</b>
+<b>04-Code</b>
 
- The merged and cleaned data is in two files
+The merged and cleaned data is in two files
   <ul>
   <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/TestTrainCombinedData.ipynb">TestTrainCombinedData.ipynb</a> - Python file with cleanup and merging of data that uses the 5 annual files and merges to <a hre="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/merged_completedata.csv">merged_completedata.csv</a>.  Details the data cleanup exercises I performed.</li>
       <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/02-Raw_Data/merged_completedata.csv">merged_completedata.csv</a> - csv file of merged data</li>
   </ul>
   
-  I landed on a final revised data structure after transformation which you will find in this file <a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/RevisedDataStructureAfterTransformation.docx">RevisedDataStructureAfterTransformation.docx</a>
+I landed on a final revised data structure after transformation which you will find in this file <a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/RevisedDataStructureAfterTransformation.docx">RevisedDataStructureAfterTransformation.docx</a>
   
 I put the results of the businesses that closed between 2019 and 2021 in the following files:
   <ul>
@@ -41,31 +41,33 @@ I put the results of the businesses that closed between 2019 and 2021 in the fol
     </ul>
    <b>2021CleanDataSet</b> has the results of the businesses and size of business that failed or survived and industry clustering vs size of businesses.
   
- The feature selection can be found in the following files:
+The feature selection can be found in the following files:
   <ul>
     <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/FeatureSelection.ipynb">FeatureSelection.ipynb</a> - Python code</li>
     <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/FeatureSelection.html">FeatureSelection.html</a> - html results</li>
     <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/FeatureSelection.pdf">FeatureSelection.pdf</a> - pdf results</li>
   </ul>
   
-  The predictions can be found in the following files:
+The predictions can be found in the following files:
   
- <b>Filter based</b>
+<b>Filter based</b>
   <ul>
     <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/Filterbasedpredictors.ipynb">Filterbasedpredictors.ipynb</a> - Python code</li>
     <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/Filterbasedpredictors.html">Filterbasedpredictors.html</a> - html results</li>
     <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/Filterbasedpredictors.pdf">Filterbasedpredictors.pdf</a> - pdf results</li>
   </ul>
+
 <b>Decision Tree, Naive Bayes GaussianNB</b>
   <ul>
     <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/sklearnMississaugaBusinessDirectory.ipynb">sklearnMississaugaBusinessDirectory.ipynb</a> - Python file</li>
   </ul>
+  
 <b>SMOTE techniques to deal with imbalanced dataset</b>
   <ul>
   <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/SMOTEMethods.ipynb">SMOTEMethods.ipynb</a> - Python file</li>
   <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/SMOTEMethods.html">SMOTEMethods.html</a> - html results</li>
   <li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/04-Code/SMOTEMethods.pdf">SMOTEMethods.pdf</a> - pdf results</li>
-
+  </ul>
     
 <b>05-Project Report</b>
  
