@@ -70,6 +70,9 @@ The predictions can be found in the following files:
   </ul>
     
 <b>05-Project Report</b>
+<ul>
+<li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/05-Project%20Report/Final%20Report%20CIND820%20The%20Effect%20of%20Covid%20in%20the%20Early%20Stages%20on%20Mississauga%20Businesses.docx">Final%20Report%20CIND820%20The%20Effect%20of%20Covid%20in%20the%20Early%20Stages%20on%20Mississauga%20Businesses.docx</a></li>
+</ul>
  
 <b>06-Project Presentation</b>
  
