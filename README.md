@@ -82,7 +82,8 @@ The predictions can be found in the following files:
  
 <b>Bibliographic Resources</b> 
 <ul>
-</li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/Bibliography_Resources/Using%20Machine%20Learning%20to%20Predict%20Business%20Survival%20in%20COVID-19.pdf">Using%20Machine%20Learning%20to%20Predict%20Business%20Survival%20in%20COVID-19.pdf</a> - copy of one of the studies on the Yelp dataset that was only available behind a paywall.  I purchased the article and have provided a copy of it here.
+</li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/Bibliography_Resources/Using%20Machine%20Learning%20to%20Predict%20Business%20Survival%20in%20COVID-19.pdf">Using%20Machine%20Learning%20to%20Predict%20Business%20Survival%20in%20COVID-19.pdf</a> - copy of one of the studies on the Yelp dataset that was only available behind a paywall.  I purchased the article and have provided a copy of it here.</li>
+</ul>
  
  
 The results of the businesses that were most / least affected by the pandemic <u>somewhat matches</u> the studies I looked at.  I have noted in the file 2021CleanDataset which businesses these were and go into detail in the project report.  I think that is interesting. Some industries, like mining or forestry were not industries you would expect to find in a city, so that discrepency with some of the studies can be explained.  
