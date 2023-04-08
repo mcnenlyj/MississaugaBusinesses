@@ -77,7 +77,7 @@ The predictions can be found in the following files:
  
 <b>06-Project Presentation</b>
 <ul>
-<li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/06-Project%20Presentation/Presentation%20CIND820%20The%20Effect%20of%20Covid%20in%20the%20Early%20Stages%20on%20Mississauga%20Businesses.pptx">Presentation%20CIND820%20The%20Effect%20of%20Covid%20in%20the%20Early%20States%20on%20Mississauga%20Businesses.pptx</a></li</ul>
+<li><a href="https://github.com/mcnenlyj/MississaugaBusinesses/blob/main/06-Project%20Presentation/Presentation%20CIND820%20The%20Effect%20of%20Covid%20in%20the%20Early%20Stages%20on%20Mississauga%20Businesses.pptx">Presentation%20CIND820%20The%20Effect%20of%20Covid%20in%20the%20Early%20Stages%20on%20Mississauga%20Businesses.pptx</a></li</ul>
  
 <b><a href="https://github.com/mcnenlyj/MississaugaBusinesses/tree/main/Bibliography_Resources">Bibliographic Resources</a></b> - copy of one of the studies on the Yelp dataset that was only available behind a paywall.  I purchased the article and have provided a copy of it here.
  
