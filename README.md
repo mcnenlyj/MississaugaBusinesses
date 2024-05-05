@@ -1,5 +1,5 @@
 # MississaugaBusinesses
-This is my Github repository for the CIND 820 Capstone Project "The effect of Covid in the early stages on Mississauga businesses". This is a private 
+This is my Github repository for the CIND 820 Capstone Project "The effect of Covid in the early stages on Mississauga businesses". This is a public 
 Github repository and can be found at https://github.com/mcnenlyj/MississaugaBusinesses.  I have uploaded the relevant Microsoft Word, Excel, html and pdf 
 files.  All coding files are in Python.
 
